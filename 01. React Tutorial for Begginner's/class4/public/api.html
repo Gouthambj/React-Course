@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="container">
+
+    </section>
+    <script>
+         var container = document.getElementById('container')
+        const searchParams = new URLSearchParams(window.location.search);
+        const username = searchParams.get('username');
+
+        var userDetails = {}
+
+        fetch(`https://dummyjson.com/users`)
+        .then(response => response.json())
+        .then((responce) => {
+            console.log(responce);
+            userDetails = responce
+            console.log(userDetails);
+
+            container.innerHTML=`
+                
+                <div class="text">
+                    <h1>${userDetails.firstName}</h1>
+                    
+                </div>    
+
+            `
+            
+            
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+
+    </script>
+</body>
+</html>
