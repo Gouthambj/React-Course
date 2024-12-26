@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section>div{
+  border: 2px solid #ccc;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color:#183853;
+  border-radius: 20px;
+}
+section>div>h1{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000 ;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section>div>input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* background-color: transparent; */
+  outline: none;
+  border: 2px solid transparent;
+  transition: 2s;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+section>div>input:focus{
+  border: 2px solid #000;
+}
+button{
+  width: 100%;
+  padding: 15px 30px;
+  border: none;
+  /* box-shadow: #05E9D6 8px 10px 2px; */
+  font-weight: bold;
+  font-size: 2.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: #30595E;
+  font-size: 2rem;
+  color: #05E9D6;
+  border-radius: 10px !important;
+}
+button:hover{
+  background-color: rgb(235, 134, 40);
+  color: #000000;
+}
+table, td{
+  border-collapse: collapse;
+  padding: 10px;
+  
+}
+
